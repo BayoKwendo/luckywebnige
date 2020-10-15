@@ -342,7 +342,7 @@ a:focus{
                   <article class="text-center margin-bottom-50">
                     <div class="icon icon-large"> <i class="lnr lnr-envelope"></i> </div>
                     <h6 style="color: #ffd850">Email</h6>
-                    <p style="color: #ffd850">marketing@luckybox.ng</p>
+                    <p style="color: #ffd850">customercare@luckybox.ng</p>
                   </article>
                 </li> 
               </ul>
@@ -372,7 +372,7 @@ a:focus{
                 <div class="block block-about">
                     
                     </div>
-                    <p style="color: #ffd850"><strong>Location</strong> : Suit 15 Divine Grace Plaza Emmanuel Keshi Street. Magodo Phase 2.</p>
+                    <p style="color: #ffd850"><strong>Location</strong> : Lagos Nigeria.</p>
 
                   </div>
                 </div>
