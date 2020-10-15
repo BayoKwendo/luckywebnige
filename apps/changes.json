@@ -1,0 +1,8 @@
+{
+	"newVersion": "2.01",
+	"apkUrl": "https://luckybox.ng/apps/latest.apk",
+	"versionNotes": [
+	"- FIXED: Network request bug",
+	"- Game optimizations"
+	]
+}

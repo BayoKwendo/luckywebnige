@@ -1,0 +1,22 @@
+
+<script src="js/vendors/jquery/jquery.min.js"></script> 
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<div id="paystackEmbedContainer" style="margin-left:30%;margin-right:30%;"></div>
+
+
+<script>
+
+  const urlParams = new URLSearchParams(window.location.search);
+
+  PaystackPop.setup({
+   key: 'pk_live_be65d173d1410877255510d53a6564651ab0cc85',
+   email: urlParams.get('email'),
+   amount: urlParams.get('amount'),
+   ref: urlParams.get('ref'),
+   container: 'paystackEmbedContainer',
+   callback: function(response){
+        alert('successfully subscribed. transaction ref is ' + response.reference);
+    },
+  });
+</script>

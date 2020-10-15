@@ -1,0 +1,374 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- Document Title -->
+<title>PAY VIA PAYSTACK</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- FontsOnline -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+
+<!-- StyleSheets -->
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" id="color" href="css/default.css">
+
+<!-- JavaScripts -->
+<script src="js/vendors/modernizr.js"></script>
+        
+ <style>
+
+/**********************************
+    Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.example3 .navbar-brand {
+    height: 80px;
+    float: left;
+    position: absolute;
+    text-align: left;
+    z-index: 9999;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.example3 .nav >li >a {
+  padding-top: 30px;
+  font-size: 13.4px;
+  padding-bottom: 20px;
+}
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+.navbar-inverse {
+    background: linear-gradient(to right,#660000,  #cc0000 ,  #660000);
+    border-color:rgba(0,0,0,0);
+}
+.navbar-inverse .navbar-nav>.activee>a, .navbar-inverse .navbar-nav>.activee>a:focus, .navbar-inverse .navbar-nav>.activee>a:hover {
+    color: #ff83a6;
+    border-bottom: 2px solid ;
+    border-color: #ff83a6;
+}  
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffd850;
+    border-bottom: 2px solid;
+    border-color: transparent;
+
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #ff83a6;
+  }
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #c73b8f;
+}
+    
+ .fa-youtube {
+  color: #e4e4e4;
+  font-size: 35px;
+  margin-right: 15px;
+  }
+.fa-facebook {
+  font-size: 35px;
+  color: #e4e4e4;
+  padding-top:10px;
+  margin-right:15px;
+}
+.fa-instagram {
+  font-size: 35px;
+  color: #e4e4e4;
+  margin-right:15px;
+}
+.fa-twitter {
+  font-size: 35px;
+  color: #e4e4e4;
+  margin-right:15px;
+}
+img {
+    transition: 0.4s ease-in-out;
+    display: inline-block !important;
+    margin: -60px;
+}
+.borders {
+  border: solid 1px pink;
+  padding: 20px;
+  background-clip: content-box;
+  background: linear-gradient(to right,#FFFF66,  #DCDCDC ,  #D3D3D3);
+  box-shadow: 0px 0px 5px 0px #8e0202;
+  outline: 1px solid white;
+  outline-offset: -10px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #fff;
+}
+
+.logonew{
+    width: 12%;
+    height: auto;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 0px solid #eee;
+}
+.page-header1 {
+    padding-top: 9px;
+    padding-bottom: 12px;
+    margin: 40px 0 20px;
+    border: 0px solid #fff;
+    background: linear-gradient(to bottom,#e5e5e5,  #fff);
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.win{
+  width: 116%;
+  height: 400px;
+}
+.work{
+  width: 50%;
+  height: auto;
+}
+.jackpot{
+  width: 100%;
+  height: auto;
+}
+.color{
+  width: 4.5%;
+  height: auto;
+}
+
+
+/* Disable user selection to avoid strange bug in Chrome on Windows:
+  * Selecting a text outside the canvas, then clicking+draging would
+  * drag the selected text but block mouse down/up events to the engine.
+  */
+  body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* DEF-3413
+  * The Facebook container will be populated with the Facebook SDK content
+  * when a Facebook App Id is provided in game.project.
+  * This caused problems with selections in Chrome on Windows, just like
+  * above. Explicitly disabling selection on the root div fixes the issue.
+  */
+  .fb-root {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .canvas-app-container {
+    background: rgb(255,255,255) no-repeat center url("try_game.png");
+    /* A positioned parent for loading visuals */
+    position: relative;
+  }
+
+  .canvas-app-container:-webkit-full-screen {
+    /* Auto width and height in Safari/Chrome fullscreen. */
+    width: auto;
+    height: auto;
+
+  }
+
+  #button-container {
+    margin-top: 20px;
+  }
+
+  .canvas-app-canvas {
+    max-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .canvas-app-progress {
+    background-color: rgb(245, 245, 245);
+    height: 20px;
+    /* Progress same width as canvas. */
+    width: 360px;
+    bottom: 0px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .canvas-app-progress-bar {
+    font-size: 12px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #dd6702;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .button {
+    color: #fff;
+    background-color: #dd6702;
+    border-color: transparent;
+    padding: 10px 20px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+</style>
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div class="container" id="wrap"> 
+  <div class="play">
+     <div class="row text-center">
+      <div style="text-align:center;">
+                    <h3 class="page-header1" style="margin-top: 0px">
+                        <img src="img/luckybox.png" alt="" class="logonew">
+                   </h3>
+      </div>
+     </div>
+   </div>
+  
+<!-- Header -->
+  <div class="example3">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--<a class="navbar-brand" href="index.html"><img style="width:260px;height: 90px;padding-left:5px" src="img/luckybox.png" alt="">
+        </a>-->
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 70px;">
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="play.html">HOW TO PLAY</a></li>
+          <li><a href="game.html">PLAY GAME</a></li>
+          <li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+          <li><a href="faq.html">FAQS</a></li>
+          <li><a href="disclaimer.html">DISCLAIMER</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <i><a href="https://www.facebook.com/luckyboxng/?modal=admin_todo_tour" class=" fa fa-facebook" style="padding-top: 25px;padding-right: 5px"></a>
+            </i>
+          <i><a href="https://www.instagram.com/luckyboxng/" class=" fa fa-instagram" style="padding-right: 5px"></a></i>
+          <i><a href="https://www.youtube.com/channel/UCbJhV-2UiyxKK-I0SHqpdsQ?view_as=subscriber" class="fa fa-youtube" style="padding-right: 5px"></a></i>
+          <i><a href="https://twitter.com/luckyboxng?lang=en" class="fa fa-twitter" style="padding-right: 5px"></a></i>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+  <!-- End Header --> 
+</div>
+  
+  <!-- Content -->
+  <div id="content"> 
+   
+    <section class="padding-top-0 padding-bottom-20" style="background-image: url(ng/universal/back.png);">
+      
+      <div class="container">
+
+        <div id="app-container">
+        <b>COMING UP SOON!</b>
+        <!--<img src="coming_up_soon.png" width="82" height="86" title="White flower" alt="Flower">-->
+        </div>
+
+      </div>
+      
+    </section>
+  </div>
+  </div>
+  <!-- End Content --> 
+  
+  <!-- Footer -->
+  <footer id="footer" style="background-image: url(ng/universal/back.png);">
+    <div class="footer-wrapper"> 
+      
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="footer-top-wrapper">
+          <div class="container"> </div>
+        </div>
+      </div>
+      <!-- End Footer Top --> 
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center copyright">
+                <p>&copy; 2018 LuckyBox.<br>ONFON LOTTO trading as LUCKYBOX <br>is licensed by National Lottery Regulatory Commission<br> under the license number 00000224</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer Bottom --> 
+    </div>
+</footer>
+  <!-- End Footer --> 
+  
+  <!-- GO TO TOP --> 
+  <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a> 
+  <!-- GO TO TOP End --> 
+</div>
+
+<!-- JavaScripts --> 
+<script src="js/vendors/jquery/jquery.min.js"></script> 
+<script src="js/vendors/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+
+</body>
+</html>
